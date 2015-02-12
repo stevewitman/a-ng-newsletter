@@ -47,7 +47,7 @@ app.controller('DemoController', function($scope) {
 });
 
 
-var apiKey = 'MDE4MjUyNTA2MDE0MjM3MjE4ODhiNmVkYw001',
+var apiKey = '', //MDE4MjUyNTA2MDE0MjM3MjE4ODhiNmVkYw001
     nprUrl = 'http://api.npr.org/query?id=61&fields=relatedLink,title,byline,text,audio,image,pullQuote,all&output=JSON';
 
 app.controller('PlayerController', function($scope, $http) {
@@ -73,3 +73,9 @@ app.controller('PlayerController', function($scope, $http) {
     // Some error occurred
   });
 });
+
+app.controller('MyController2', function ($scope) {
+  $scope.sayHello = function () {
+    alert("hello");
+  }
+})
