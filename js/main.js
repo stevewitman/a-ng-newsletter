@@ -88,3 +88,11 @@ app.controller('MyController3', function ($scope) {
     { name: 'Anand'}
   ];
 });
+
+app.controller('MyController4', function ($scope) {
+  $scope.fruits = {
+    'Apple': 'red',
+    'Banana': 'yellow',
+    'Kiwi': 'green'
+  }
+})

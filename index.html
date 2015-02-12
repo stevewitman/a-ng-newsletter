@@ -48,5 +48,11 @@
         <li ng-repeat="person in roommates">{{ person.name }}</li>
       </ul>
     </div>
+
+    <div ng-controller="MyController4">
+      <ol>
+        <li ng-repeat="(fruit, color) in fruits">{{fruit}} is color {{color}}</li>
+      </ol>
+    </div>
   </body>
 </html>
