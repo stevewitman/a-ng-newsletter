@@ -29,5 +29,12 @@
     <div ng-controller="MyController2">
       <button ng-click="sayHello()">Say Hello</button>
     </div>
+    <button ng-init="shouldShow = true" ng-click="shouldShow = !shouldShow">Flip the shouldShow variable</button>
+    <div ng-show="shouldShow">
+      <h3>Showing {{ shouldShow }}</h3>
+    </div>
+    <div ng-hide="shouldShow">
+      <h3>Hiding {{ shouldShow }}</h3>
+    </div>
   </body>
 </html>
