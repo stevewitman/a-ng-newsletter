@@ -78,4 +78,13 @@ app.controller('MyController2', function ($scope) {
   $scope.sayHello = function () {
     alert("hello");
   }
-})
+});
+
+app.controller('MyController3', function ($scope) {
+  $scope.roommates = [
+    { name: 'Ari'},
+    { name: 'Q'},
+    { name: 'Sean'},
+    { name: 'Anand'}
+  ];
+});
